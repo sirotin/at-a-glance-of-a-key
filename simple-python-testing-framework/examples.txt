@@ -1,0 +1,132 @@
+****************************************************************************************************************************
+
+C:\Python27\python.exe C:/Users/sirot/Desktop/simple-testing-framework-example/tests_runner.py -h
+Usage: tests_runner.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -t TESTS, --tests=TESTS
+                        Comma separated list of tests
+  -c, --continue-after-failure
+                        Continue to the next test in case of test failure
+
+Process finished with exit code 0
+
+****************************************************************************************************************************
+
+C:\Python27\python.exe C:/Users/sirot/Desktop/simple-testing-framework-example/tests_runner.py -t TestInternet*,TestPythonVersion
+2017-05-09 23:40:33,684 (tests_runner) INFO  Looking for available tests
+2017-05-09 23:40:33,686 (tests_runner) DEBUG  + Found python file test_always_fails.py
+2017-05-09 23:40:33,688 (tests_runner) DEBUG  + Found python file test_internet_connectivity.py
+2017-05-09 23:40:33,782 (tests_runner) DEBUG  + Found python file test_python_version.py
+2017-05-09 23:40:33,785 (tests_runner) DEBUG  + Found python file test_sleeping_and_failing.py
+2017-05-09 23:40:33,786 (tests_runner) INFO  Loaded 4 tests:
+2017-05-09 23:40:33,786 (tests_runner) INFO  + TestAlwaysFails
+2017-05-09 23:40:33,786 (tests_runner) INFO  + TestInternetConnectivity
+2017-05-09 23:40:33,786 (tests_runner) INFO  + TestPythonVersion
+2017-05-09 23:40:33,786 (tests_runner) INFO  + TestSleepingAndFailing
+2017-05-09 23:40:33,786 (tests_runner) INFO  After filtering tests by given pattern, found 2 tests to execute
+2017-05-09 23:40:33,786 (tests_runner) INFO  + TestInternetConnectivity
+2017-05-09 23:40:33,786 (tests_runner) INFO  + TestPythonVersion
+2017-05-09 23:40:33,788 (tests_runner) INFO  Starting test: TestInternetConnectivity
+2017-05-09 23:40:33,788 (TestInternetConnectivity) INFO  Going to test internet connectivity
+2017-05-09 23:40:34,085 (TestInternetConnectivity) INFO  Internet connectivity is ok
+2017-05-09 23:40:34,085 (tests_runner) INFO  Test execution completed successfully!
+2017-05-09 23:40:34,085 (tests_runner) INFO  Test execution took 0.30 seconds
+2017-05-09 23:40:34,085 (tests_runner) INFO  Starting test: TestPythonVersion
+2017-05-09 23:40:34,085 (TestPythonVersion) INFO  Python version is 2.7.11
+2017-05-09 23:40:34,085 (tests_runner) INFO  Test execution completed successfully!
+2017-05-09 23:40:34,085 (tests_runner) INFO  Test execution took 0.00 seconds
+2017-05-09 23:40:34,085 (tests_runner) INFO  ============================================================
+2017-05-09 23:40:34,086 (tests_runner) INFO  Ran 2 tests (2 passed, 0 failed) in 0.30 seconds
+
+Process finished with exit code 0
+
+****************************************************************************************************************************
+
+C:\Python27\python.exe C:/Users/sirot/Desktop/simple-testing-framework-example/tests_runner.py -t TestAlwaysFails
+2017-05-09 23:42:03,339 (tests_runner) INFO  Looking for available tests
+2017-05-09 23:42:03,339 (tests_runner) DEBUG  + Found python file test_always_fails.py
+2017-05-09 23:42:03,342 (tests_runner) DEBUG  + Found python file test_internet_connectivity.py
+2017-05-09 23:42:03,398 (tests_runner) DEBUG  + Found python file test_python_version.py
+2017-05-09 23:42:03,398 (tests_runner) DEBUG  + Found python file test_sleeping_and_failing.py
+2017-05-09 23:42:03,401 (tests_runner) INFO  Loaded 4 tests:
+2017-05-09 23:42:03,401 (tests_runner) INFO  + TestAlwaysFails
+2017-05-09 23:42:03,401 (tests_runner) INFO  + TestInternetConnectivity
+2017-05-09 23:42:03,401 (tests_runner) INFO  + TestPythonVersion
+2017-05-09 23:42:03,401 (tests_runner) INFO  + TestSleepingAndFailing
+2017-05-09 23:42:03,401 (tests_runner) INFO  After filtering tests by given pattern, found 1 tests to execute
+2017-05-09 23:42:03,401 (tests_runner) INFO  + TestAlwaysFails
+2017-05-09 23:42:03,401 (tests_runner) INFO  Starting test: TestAlwaysFails
+2017-05-09 23:42:03,401 (tests_runner) ERROR  Test execution failed: My purpose in life is to fail
+2017-05-09 23:42:03,401 (tests_runner) ERROR  ------------------------------------------------------------
+2017-05-09 23:42:03,403 (tests_runner) ERROR  Traceback (most recent call last):
+2017-05-09 23:42:03,403 (tests_runner) ERROR    File "C:/Users/sirot/Desktop/simple-testing-framework-example/tests_runner.py", line 54, in run_single_test
+2017-05-09 23:42:03,403 (tests_runner) ERROR      test.run_test()
+2017-05-09 23:42:03,403 (tests_runner) ERROR    File "C:\Users\sirot\Desktop\simple-testing-framework-example\tests\test_always_fails.py", line 8, in run_test
+2017-05-09 23:42:03,403 (tests_runner) ERROR      raise Exception("My purpose in life is to fail")
+2017-05-09 23:42:03,403 (tests_runner) ERROR  Exception: My purpose in life is to fail
+2017-05-09 23:42:03,403 (tests_runner) ERROR  ------------------------------------------------------------
+2017-05-09 23:42:03,404 (tests_runner) INFO  Test execution took 0.00 seconds
+2017-05-09 23:42:03,404 (tests_runner) ERROR  Discarding other tests due to failure
+2017-05-09 23:42:03,404 (tests_runner) INFO  ============================================================
+2017-05-09 23:42:03,404 (tests_runner) INFO  Ran 1 tests (0 passed, 1 failed) in 0.00 seconds
+
+Process finished with exit code 1
+
+****************************************************************************************************************************
+
+C:\Python27\python.exe C:/Users/sirot/Desktop/simple-testing-framework-example/tests_runner.py -t * -c
+2017-05-09 23:44:21,749 (tests_runner) INFO  Looking for available tests
+2017-05-09 23:44:21,749 (tests_runner) DEBUG  + Found python file test_always_fails.py
+2017-05-09 23:44:21,750 (tests_runner) DEBUG  + Found python file test_internet_connectivity.py
+2017-05-09 23:44:21,803 (tests_runner) DEBUG  + Found python file test_python_version.py
+2017-05-09 23:44:21,805 (tests_runner) DEBUG  + Found python file test_sleeping_and_failing.py
+2017-05-09 23:44:21,806 (tests_runner) INFO  Loaded 4 tests:
+2017-05-09 23:44:21,808 (tests_runner) INFO  + TestAlwaysFails
+2017-05-09 23:44:21,808 (tests_runner) INFO  + TestInternetConnectivity
+2017-05-09 23:44:21,808 (tests_runner) INFO  + TestPythonVersion
+2017-05-09 23:44:21,808 (tests_runner) INFO  + TestSleepingAndFailing
+2017-05-09 23:44:21,808 (tests_runner) INFO  After filtering tests by given pattern, found 4 tests to execute
+2017-05-09 23:44:21,808 (tests_runner) INFO  + TestAlwaysFails
+2017-05-09 23:44:21,808 (tests_runner) INFO  + TestInternetConnectivity
+2017-05-09 23:44:21,808 (tests_runner) INFO  + TestPythonVersion
+2017-05-09 23:44:21,808 (tests_runner) INFO  + TestSleepingAndFailing
+2017-05-09 23:44:21,808 (tests_runner) INFO  Starting test: TestAlwaysFails
+2017-05-09 23:44:21,809 (tests_runner) ERROR  Test execution failed: My purpose in life is to fail
+2017-05-09 23:44:21,809 (tests_runner) ERROR  ------------------------------------------------------------
+2017-05-09 23:44:21,809 (tests_runner) ERROR  Traceback (most recent call last):
+2017-05-09 23:44:21,809 (tests_runner) ERROR    File "C:/Users/sirot/Desktop/simple-testing-framework-example/tests_runner.py", line 54, in run_single_test
+2017-05-09 23:44:21,809 (tests_runner) ERROR      test.run_test()
+2017-05-09 23:44:21,809 (tests_runner) ERROR    File "C:\Users\sirot\Desktop\simple-testing-framework-example\tests\test_always_fails.py", line 8, in run_test
+2017-05-09 23:44:21,809 (tests_runner) ERROR      raise Exception("My purpose in life is to fail")
+2017-05-09 23:44:21,809 (tests_runner) ERROR  Exception: My purpose in life is to fail
+2017-05-09 23:44:21,809 (tests_runner) ERROR  ------------------------------------------------------------
+2017-05-09 23:44:21,809 (tests_runner) INFO  Test execution took 0.00 seconds
+2017-05-09 23:44:21,809 (tests_runner) INFO  Starting test: TestInternetConnectivity
+2017-05-09 23:44:21,809 (TestInternetConnectivity) INFO  Going to test internet connectivity
+2017-05-09 23:44:22,075 (TestInternetConnectivity) INFO  Internet connectivity is ok
+2017-05-09 23:44:22,075 (tests_runner) INFO  Test execution completed successfully!
+2017-05-09 23:44:22,075 (tests_runner) INFO  Test execution took 0.27 seconds
+2017-05-09 23:44:22,075 (tests_runner) INFO  Starting test: TestPythonVersion
+2017-05-09 23:44:22,075 (TestPythonVersion) INFO  Python version is 2.7.11
+2017-05-09 23:44:22,075 (tests_runner) INFO  Test execution completed successfully!
+2017-05-09 23:44:22,075 (tests_runner) INFO  Test execution took 0.00 seconds
+2017-05-09 23:44:22,075 (tests_runner) INFO  Starting test: TestSleepingAndFailing
+2017-05-09 23:44:22,075 (TestSleepingAndFailing) INFO  Setting up my sleeping environment
+2017-05-09 23:44:22,076 (TestSleepingAndFailing) INFO  Going to sleep for 2 seconds
+2017-05-09 23:44:24,076 (TestSleepingAndFailing) INFO  You know what? I'm still tired. need 3 more seconds
+2017-05-09 23:44:27,078 (tests_runner) ERROR  Test execution failed: I don't want to get up!
+2017-05-09 23:44:27,078 (tests_runner) ERROR  ------------------------------------------------------------
+2017-05-09 23:44:27,078 (tests_runner) ERROR  Traceback (most recent call last):
+2017-05-09 23:44:27,078 (tests_runner) ERROR    File "C:/Users/sirot/Desktop/simple-testing-framework-example/tests_runner.py", line 54, in run_single_test
+2017-05-09 23:44:27,078 (tests_runner) ERROR      test.run_test()
+2017-05-09 23:44:27,079 (tests_runner) ERROR    File "C:\Users\sirot\Desktop\simple-testing-framework-example\tests\test_sleeping_and_failing.py", line 18, in run_test
+2017-05-09 23:44:27,079 (tests_runner) ERROR      raise Exception("I don't want to get up!")
+2017-05-09 23:44:27,079 (tests_runner) ERROR  Exception: I don't want to get up!
+2017-05-09 23:44:27,079 (tests_runner) ERROR  ------------------------------------------------------------
+2017-05-09 23:44:27,079 (tests_runner) INFO  Test execution took 5.00 seconds
+2017-05-09 23:44:27,079 (tests_runner) INFO  ============================================================
+2017-05-09 23:44:27,081 (tests_runner) INFO  Ran 4 tests (2 passed, 2 failed) in 5.27 seconds
+
+Process finished with exit code 1
