@@ -22,6 +22,7 @@ class AwsWrapper:
 		if not(self.instance):
 			raise Exception("Failed creating spot instance")
 
+		# Note: This is optional, the instance is ready for ssh almost 2 minutes before AWS decides it's healthy
 		result = self.helper.waitForHealthchecks(self.instance, timeout=300)
 		if not(result):
 			logger.warn("Failed waiting for instance healthchecks to pass")

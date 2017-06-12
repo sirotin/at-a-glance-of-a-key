@@ -112,7 +112,7 @@ class AwsHelper:
 		if (instance == None):
 			return False
 
-		logger.debug("Checking if instance %s is healthy" % instance.id)
+		logger.debug("Waiting until instance %s will become healthy (timeout: %d seconds)" % (instance.id, timeout))
 		retries = timeout
 		while (retries > 0):
 			health = self.ec2.get_all_instance_status([instance.id])
