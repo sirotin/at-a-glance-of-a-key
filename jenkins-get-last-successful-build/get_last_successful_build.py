@@ -1,5 +1,11 @@
 #! /usr/bin/python
 
+# Author: Alexander Sirotin / sirotin@gmail.com
+# Copyright (c) 2017 Alexander Sirotin.
+# Licensed under MIT license:
+# https://opensource.org/licenses/mit-license.php
+# Your use is on an "AS-IS" basis, and subject to the terms and conditions of this license.
+
 import re
 import sys
 import jenkins
