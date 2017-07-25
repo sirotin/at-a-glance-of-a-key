@@ -7,7 +7,7 @@
 #include <iostream>
 
 #include "sender.h"
-#include "synchronizer.hpp"
+#include "synchronizer.h"
 #include "aws/core/Aws.h"
 
 using namespace std;

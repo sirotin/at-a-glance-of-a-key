@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "counter.hpp"
+#include "counter.h"
 #include "aws/sqs/SQSClient.h"
 
 #include <mutex>
