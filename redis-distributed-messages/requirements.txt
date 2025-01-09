@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+redis
+aiohttp
+prometheus_client
