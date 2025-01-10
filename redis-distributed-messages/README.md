@@ -19,7 +19,7 @@ uvicorn server:app --reload
 
 **Run the Consumer**
 For the simple consumer, just run the "simple-consumer.py" script within myenv.
-For the streams consumer, run both "streams-consumer.py" script within myenv.
+For the streams consumer, run the "streams-consumer.py" script within myenv.
 
 **Generating Load**
 Run the producer.py script or call the API endpoint:
